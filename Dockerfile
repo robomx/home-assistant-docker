@@ -1,4 +1,4 @@
-FROM ghcr.io/home-assistant/amd64-homeassistant-base:3.20
+FROM ghcr.io/home-assistant/home-assistant:stable
 
 ARG \
     BUILD_ARCH \
