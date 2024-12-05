@@ -1,12 +1,11 @@
 FROM ghcr.io/home-assistant/home-assistant:stable
 
-ARG \
-    BUILD_ARCH \
-    QEMU_CPU \
-    SSOCR_VERSION \
-    LIBCEC_VERSION \
-    PICOTTS_HASH \
-    TELLDUS_COMMIT
+ENV BUILD_ARCH=amd64
+ENV QEMU_CPU=qemu64
+ENV SSOCR_VERSION=3.3.0
+ENV LIBCEC_VERSION=4.0.5
+ENV PICOTTS_HASH=e3ba46009ee868911fa0b53db672a55f9cc13b1c
+ENV TELLDUS_COMMIT=latest
 
 ##
 # Install component packages
